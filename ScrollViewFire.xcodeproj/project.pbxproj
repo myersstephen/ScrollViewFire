@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		690BC1481E12D840003B2FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BC1471E12D840003B2FE1 /* AppDelegate.swift */; };
+		690BC14A1E12D840003B2FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BC1491E12D840003B2FE1 /* ViewController.swift */; };
+		690BC14D1E12D840003B2FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690BC14B1E12D840003B2FE1 /* Main.storyboard */; };
+		690BC14F1E12D840003B2FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690BC14E1E12D840003B2FE1 /* Assets.xcassets */; };
+		690BC1521E12D840003B2FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */; };
+		69244FA11E296C5C00D8ECE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */; };
+		C6C525FB6EAB4B5E55FC5CC1 /* Pods_ScrollViewFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0AE7E8A10092EC694371D6 /* Pods_ScrollViewFire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		690BC1441E12D840003B2FE1 /* ScrollViewFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		690BC1471E12D840003B2FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		690BC1491E12D840003B2FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		690BC14C1E12D840003B2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		690BC14E1E12D840003B2FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		690BC1511E12D840003B2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		690BC1531E12D840003B2FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.debug.xcconfig"; sourceTree = "<group>"; };
+		97DF53A3BD280348E4C28F71 /* Pods-ScrollViewFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.release.xcconfig"; sourceTree = "<group>"; };
+		EC0AE7E8A10092EC694371D6 /* Pods_ScrollViewFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		690BC1411E12D840003B2FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C525FB6EAB4B5E55FC5CC1 /* Pods_ScrollViewFire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		399F288AF65F245199F9A810 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */,
+				97DF53A3BD280348E4C28F71 /* Pods-ScrollViewFire.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		690BC13B1E12D83F003B2FE1 = {
+			isa = PBXGroup;
+			children = (
+				690BC1461E12D840003B2FE1 /* ScrollViewFire */,
+				690BC1451E12D840003B2FE1 /* Products */,
+				399F288AF65F245199F9A810 /* Pods */,
+				DB0DB940DF3CAB3D491F423E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		690BC1451E12D840003B2FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				690BC1441E12D840003B2FE1 /* ScrollViewFire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		690BC1461E12D840003B2FE1 /* ScrollViewFire */ = {
+			isa = PBXGroup;
+			children = (
+				690BC1471E12D840003B2FE1 /* AppDelegate.swift */,
+				690BC1491E12D840003B2FE1 /* ViewController.swift */,
+				690BC14B1E12D840003B2FE1 /* Main.storyboard */,
+				690BC14E1E12D840003B2FE1 /* Assets.xcassets */,
+				690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */,
+				690BC1531E12D840003B2FE1 /* Info.plist */,
+				69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */,
+			);
+			path = ScrollViewFire;
+			sourceTree = "<group>";
+		};
+		DB0DB940DF3CAB3D491F423E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC0AE7E8A10092EC694371D6 /* Pods_ScrollViewFire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		690BC1431E12D840003B2FE1 /* ScrollViewFire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690BC1561E12D840003B2FE1 /* Build configuration list for PBXNativeTarget "ScrollViewFire" */;
+			buildPhases = (
+				840B85DC66B60E753FA3BA09 /* [CP] Check Pods Manifest.lock */,
+				690BC1401E12D840003B2FE1 /* Sources */,
+				690BC1411E12D840003B2FE1 /* Frameworks */,
+				690BC1421E12D840003B2FE1 /* Resources */,
+				84D06184833EB4AEB1AABF64 /* [CP] Embed Pods Frameworks */,
+				249AB22E91AC4AED406C187F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewFire;
+			productName = ScrollViewFire;
+			productReference = 690BC1441E12D840003B2FE1 /* ScrollViewFire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		690BC13C1E12D83F003B2FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Stephen Myers";
+				TargetAttributes = {
+					690BC1431E12D840003B2FE1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F9DR8RPA25;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 690BC13F1E12D83F003B2FE1 /* Build configuration list for PBXProject "ScrollViewFire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 690BC13B1E12D83F003B2FE1;
+			productRefGroup = 690BC1451E12D840003B2FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				690BC1431E12D840003B2FE1 /* ScrollViewFire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		690BC1421E12D840003B2FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BC1521E12D840003B2FE1 /* LaunchScreen.storyboard in Resources */,
+				69244FA11E296C5C00D8ECE2 /* GoogleService-Info.plist in Resources */,
+				690BC14F1E12D840003B2FE1 /* Assets.xcassets in Resources */,
+				690BC14D1E12D840003B2FE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249AB22E91AC4AED406C187F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840B85DC66B60E753FA3BA09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84D06184833EB4AEB1AABF64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		690BC1401E12D840003B2FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690BC14A1E12D840003B2FE1 /* ViewController.swift in Sources */,
+				690BC1481E12D840003B2FE1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		690BC14B1E12D840003B2FE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690BC14C1E12D840003B2FE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				690BC1511E12D840003B2FE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		690BC1541E12D840003B2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		690BC1551E12D840003B2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		690BC1571E12D840003B2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9DR8RPA25;
+				INFOPLIST_FILE = ScrollViewFire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = projects.Stephen.ScrollViewFire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		690BC1581E12D840003B2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97DF53A3BD280348E4C28F71 /* Pods-ScrollViewFire.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9DR8RPA25;
+				INFOPLIST_FILE = ScrollViewFire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = projects.Stephen.ScrollViewFire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		690BC13F1E12D83F003B2FE1 /* Build configuration list for PBXProject "ScrollViewFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690BC1541E12D840003B2FE1 /* Debug */,
+				690BC1551E12D840003B2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690BC1561E12D840003B2FE1 /* Build configuration list for PBXNativeTarget "ScrollViewFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690BC1571E12D840003B2FE1 /* Debug */,
+				690BC1581E12D840003B2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 690BC13C1E12D83F003B2FE1 /* Project object */;
+}
