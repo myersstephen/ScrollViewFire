@@ -28,7 +28,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 //        ref.observeSingleEvent(of: .childChanged, with: {data in
 //         print("update happened")
 //            })
-        updateScreenPosition()
+        //updateScreenPosition()
         
         }
     
@@ -37,18 +37,20 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //Print the y coordinate of the scrollview
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = scrollView.contentOffset.y
-        print(y)
+       // print(y)
         
-        //set position
-        //self.ref.setValue(["position":y])
+       // set position
+        self.ref.setValue(["position_IS":y])
     }
     
     
     
     @IBAction func BottomTapped(_ sender: Any) {
         //test to see if when bottom button is pressed it should scroll to top
-        //setContentOffSet()
+        setContentOffSet()
     }
+    
+    
     
     
     
@@ -58,6 +60,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.setContentOffset(offSet, animated: true)
     }
+    
+    
+    
+    
    
     func updateScreenPosition(){
         
