@@ -15,6 +15,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     var ref: FIRDatabaseReference!
     //var pos = FIRDataSnapshot()
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    private var _selectedState: Bool!
+    
+    var selectedState: Bool
+    {
+        get{
+            return _selectedState
+        } set{
+            _selectedState = newValue
+        }
+    }
 
     
     
@@ -23,13 +34,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         scrollView.delegate = self
         ref = FIRDatabase.database().reference()
-        
+        print("\(selectedState)")
         
 //        ref.observeSingleEvent(of: .childChanged, with: {data in
 //         print("update happened")
 //            })
         //updateScreenPosition()
         
+        
+        checkBroadcastState()
         }
     
     
@@ -37,12 +50,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     //Print the y coordinate of the scrollview
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = scrollView.contentOffset.y
-       // print(y)
+        // print(y)
         
-       // set position
-        self.ref.setValue(["position_IS":y])
+        // set position if selected state is true
+        if selectedState == true {
+            self.ref.setValue(["position_IS":y])
+        }
+        
     }
-    
+
     
     
     @IBAction func BottomTapped(_ sender: Any) {
@@ -50,6 +66,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         setContentOffSet()
     }
     
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     
@@ -80,6 +99,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         })
         
         
+    }
+    
+    func checkBroadcastState() {
+        if selectedState == true {
+            
+           
+            
+        } else if selectedState == false {
+            updateScreenPosition()
+        }
     }
 
 }
