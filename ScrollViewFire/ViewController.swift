@@ -43,6 +43,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         
         checkBroadcastState()
+        
+        //TODO: turn reference to datababse back off when in receive mode(i.e. selected state is changed to false)
+        
         }
     
     
@@ -104,7 +107,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func checkBroadcastState() {
         if selectedState == true {
             
-           
+           ref.removeAllObservers()
             
         } else if selectedState == false {
             updateScreenPosition()
