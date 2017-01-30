@@ -13,6 +13,7 @@
 		690BC14F1E12D840003B2FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690BC14E1E12D840003B2FE1 /* Assets.xcassets */; };
 		690BC1521E12D840003B2FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */; };
 		69244FA11E296C5C00D8ECE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */; };
+		69D063491E3E9C3000841830 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D063481E3E9C2F00841830 /* LoginVC.swift */; };
 		C6C525FB6EAB4B5E55FC5CC1 /* Pods_ScrollViewFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0AE7E8A10092EC694371D6 /* Pods_ScrollViewFire.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		690BC1511E12D840003B2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		690BC1531E12D840003B2FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69D063481E3E9C2F00841830 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.debug.xcconfig"; sourceTree = "<group>"; };
 		97DF53A3BD280348E4C28F71 /* Pods-ScrollViewFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.release.xcconfig"; sourceTree = "<group>"; };
 		EC0AE7E8A10092EC694371D6 /* Pods_ScrollViewFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,7 @@
 				690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */,
 				690BC1531E12D840003B2FE1 /* Info.plist */,
 				69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */,
+				69D063481E3E9C2F00841830 /* LoginVC.swift */,
 			);
 			path = ScrollViewFire;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				690BC14A1E12D840003B2FE1 /* ViewController.swift in Sources */,
 				690BC1481E12D840003B2FE1 /* AppDelegate.swift in Sources */,
+				69D063491E3E9C3000841830 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

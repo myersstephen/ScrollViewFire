@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcasting?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7Z-6r-KIc">
-                                <rect key="frame" x="122" y="187" width="130" height="51"/>
+                                <rect key="frame" x="122.5" y="187" width="130" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="6Zv-Gu-ji0"/>
                                     <constraint firstAttribute="width" constant="130" id="A5W-43-tHU"/>
@@ -113,30 +113,6 @@
                                                 </constraints>
                                                 <state key="normal" title="TOP"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCJ-3T-zHX">
-                                                <rect key="frame" x="164" y="198" width="46" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="46" id="2bm-CW-3le"/>
-                                                    <constraint firstAttribute="height" constant="30" id="kzG-xE-wJo"/>
-                                                </constraints>
-                                                <state key="normal" title="1"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKy-cH-Gp0">
-                                                <rect key="frame" x="164" y="343" width="46" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="46" id="IM2-J3-Xn7"/>
-                                                    <constraint firstAttribute="height" constant="30" id="kuu-um-CP1"/>
-                                                </constraints>
-                                                <state key="normal" title="2"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-Pq-Khf">
-                                                <rect key="frame" x="164" y="499" width="46" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="46" id="JNN-X9-xqo"/>
-                                                    <constraint firstAttribute="height" constant="30" id="TqA-2R-NHT"/>
-                                                </constraints>
-                                                <state key="normal" title="3"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGl-Ps-W48">
                                                 <rect key="frame" x="14" y="18" width="34" height="30"/>
                                                 <constraints>
@@ -148,20 +124,25 @@
                                                     <action selector="backBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqd-3T-98B"/>
                                                 </connections>
                                             </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7FS-pu-ENA">
+                                                <rect key="frame" x="14" y="56" width="345" height="885"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">Chocolate bar topping wafer muffin donut lemon drops. Sweet roll candy bonbon. Soufflé bear claw sugar plum cake cupcake. Tootsie roll tart donut croissant cookie macaroon chupa chups tiramisu muffin. Gummies candy sugar plum cupcake candy pudding. Topping apple pie gummi bears toffee caramels marzipan muffin gingerbread. Cotton candy jujubes jujubes macaroon cotton candy. Sweet apple pie caramels candy. Bear claw tootsie roll bear claw marshmallow marzipan candy canes. Danish jelly beans powder brownie soufflé pie toffee tootsie roll. Jujubes sweet roll fruitcake. Gummi bears marzipan brownie soufflé fruitcake cupcake dessert cookie. Bear claw cheesecake brownie wafer candy brownie bear claw.
+Jelly-o lemon drops gingerbread. Danish chocolate gummies cake apple pie ice cream pie fruitcake. Tart apple pie gummies fruitcake cheesecake tiramisu marshmallow. Apple pie tootsie roll jelly-o pie. Brownie tart danish donut icing cupcake cookie pastry. Gummies cake apple pie gummies tiramisu. Sesame snaps caramels pastry soufflé gingerbread macaroon. Cake wafer jelly sesame snaps gingerbread cake chocolate bar bonbon candy canes. Bear claw sweet carrot cake chupa chups dessert. Jujubes sugar plum sesame snaps biscuit icing cookie. Caramels gummi bears chocolate toffee danish donut gummies. Lollipop tart toffee. Liquorice pudding ice cream.
+Cupcake chocolate caramels.  Liquorice chupa chups candy. Croissant macaroon marshmallow tootsie roll muffin.
+Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gummi bears bear claw toffee muffin halvah lollipop lemon drops. Cupcake cookie sweet. Apple pie tiramisu pastry soufflé soufflé fruitcake muffin biscuit sweet roll. Cake sugar plum danish. Marzipan cookie bonbon jelly chocolate bar. Icing ice cream croissant. Gummies cookie marzipan sweet roll icing. Brownie tootsie roll apple pie pudding chupa chups pastry. Caramels chupa chups cookie marziphups. Chocolate macaroon tart. Liquorice carrot cake sugar plum cupcake sweet. Bonbon chocolate cake chocolate brownie dragée halvah dragée.Jujubes carrot cake croissant tiramisu cheesecake cheesecake soufflé toffee. Candy canes fruitcake chocolate pudding gummies marzipan jelly-o. Liquorice chocolate candy canes croissant lemon drops gummies cotton candy tootsie roll. Chupa chups croissant pastry tootsie roll. Sugar plum pie sugar plum pie.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="12K-GZ-tHV"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="EjT-RI-IeE"/>
-                                            <constraint firstItem="WCJ-3T-zHX" firstAttribute="top" secondItem="eca-wr-a19" secondAttribute="bottom" constant="150" id="HeR-co-sde"/>
-                                            <constraint firstItem="fJd-Pq-Khf" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="HnW-gH-44b"/>
                                             <constraint firstAttribute="height" constant="1000" id="bee-Px-qio"/>
-                                            <constraint firstItem="fJd-Pq-Khf" firstAttribute="top" secondItem="jKy-cH-Gp0" secondAttribute="bottom" constant="126" id="cy8-cK-UrA"/>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="iDn-bP-b0s"/>
-                                            <constraint firstItem="jKy-cH-Gp0" firstAttribute="top" secondItem="WCJ-3T-zHX" secondAttribute="bottom" constant="115" id="iFG-ea-eat"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="leading" secondItem="cox-be-wBq" secondAttribute="leading" constant="14" id="qH2-jg-QQj"/>
-                                            <constraint firstItem="WCJ-3T-zHX" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="wu9-f4-Ifd"/>
-                                            <constraint firstItem="jKy-cH-Gp0" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="xYa-e9-sd5"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txY-ee-ayU">
@@ -174,16 +155,6 @@
                                         <connections>
                                             <action selector="BottomTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYt-xF-lkI"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTC-MQ-1wf">
-                                        <rect key="frame" x="162" y="666" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="4"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFD-hD-S6t">
-                                        <rect key="frame" x="162" y="799" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="5"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -209,11 +180,12 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="scrollView" destination="EHq-3P-qZG" id="7my-J3-oDK"/>
+                        <outlet property="textView" destination="7FS-pu-ENA" id="us0-nR-TgN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="103"/>
+            <point key="canvasLocation" x="229.59999999999999" y="102.54872563718142"/>
         </scene>
     </scenes>
 </document>

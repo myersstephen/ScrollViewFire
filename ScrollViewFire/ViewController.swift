@@ -10,10 +10,10 @@ import UIKit
 import Firebase
 
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate {
     
+    @IBOutlet weak var textView: UITextView!
     var ref: FIRDatabaseReference!
-    //var pos = FIRDataSnapshot()
     @IBOutlet weak var scrollView: UIScrollView!
     
     private var _selectedState: Bool!
@@ -33,20 +33,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         scrollView.delegate = self
+        textView.delegate = self
         ref = FIRDatabase.database().reference()
-        print("\(selectedState)")
-        
-//        ref.observeSingleEvent(of: .childChanged, with: {data in
-//         print("update happened")
-//            })
-        //updateScreenPosition()
-        
         
         checkBroadcastState()
         
-        //TODO: turn reference to datababse back off when in receive mode(i.e. selected state is changed to false)
+        textView.isUserInteractionEnabled = false
         
-        }
+    }
     
     
     
