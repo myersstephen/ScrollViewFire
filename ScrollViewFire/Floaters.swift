@@ -200,22 +200,31 @@ import UIKit
                                 
                                 self.views.append(floatieView)
                                 
+                                
+                                
+                                
                                 //If next value changed to true iamges will continue to animate on their own
                                 UIView.animate(withDuration: self.duration, delay: 0,
-                                                           options: [], animations: {
+                                               options: [UIViewAnimationOptions.allowUserInteraction], animations: {
                                                             floatieView.center.y = endingPoint
                                                             floatie.alpha = self.endingAlpha
                                                             next = false
                                 }, completion: {(value: Bool) in
                                     if self.remove {
                                         floatieView.removeFromSuperview()
-                                        //self.stopAnimation()
+                                        self.stopAnimation()
                                     }
                                 })
+                                
+                                
+                                
+                                
                                 UIView.animate(withDuration: self.duration1, delay: 0,
                                                            options: [.repeat, .autoreverse], animations: {
-                                                            floatieView.center.x = xChange
-                                }, completion: nil)
+                                                            floatieView.center.x = xChange }, completion: nil)
+                                
+                                
+                                
                                 UIView.animate(withDuration: self.duration2, delay: 0, options: [.repeat, .autoreverse], animations: {                 floatieView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2)*randomRotation)
                                 }, completion: nil)
                                 
@@ -226,9 +235,11 @@ import UIKit
             }
         } else {
             print("Already Animating")
+            
         }
     }
     
+       
     func stopAnimation() {
         print("Stop Animating")
         views = []
