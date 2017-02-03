@@ -74,7 +74,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         //TODO: Float number for y here should be equal to the number we recive from firebase.
         let offSet = CGPoint(x: 0, y:7.0)
         
-        scrollView.setContentOffset(offSet, animated: true)
+        Animations.start(0.3, animations: {
+            self.scrollView.setContentOffset(offSet, animated: true)
+        })
     }
     
     
