@@ -12,12 +12,14 @@ import Firebase
 
 class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate {
     
+    @IBOutlet weak var FloaterView: Floater!
+    
     @IBOutlet weak var textView: UITextView!
     var ref: FIRDatabaseReference!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var likesLabel: UILabel!
     var nLikes: Int = 0
-    private var _selectedState: Bool!
+    fileprivate var _selectedState: Bool!
 
     var selectedState: Bool
     {
@@ -82,6 +84,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         self.nLikes += 1
         self.likesLabel.text = "\(self.nLikes)"
         self.ref.child("likes").setValue(self.nLikes)
+        FloaterView.startAnimation()
+        //FloaterView.stopAnimation()
     }
     
     

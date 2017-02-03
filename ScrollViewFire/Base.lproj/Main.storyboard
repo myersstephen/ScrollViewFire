@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYu-Lf-hqb">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYu-Lf-hqb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -141,12 +141,54 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-xN-qjX" customClass="Floater" customModule="ScrollViewFire" customModuleProvider="target">
+                                                <rect key="frame" x="55" y="56" width="240" height="302"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="AFg-oG-3FQ"/>
+                                                    <constraint firstAttribute="height" constant="302" id="n19-Cc-gOw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="FloatingUp" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="removeAtEnd" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="floatieWidth">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="floatieHeight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="speedX">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="speedY">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="delayedStart">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="density">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rotationSpeed">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaAtStart">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaAtEnd">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="floaterImage1" value="Heart"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="12K-GZ-tHV"/>
+                                            <constraint firstItem="CSb-xN-qjX" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" constant="-12.5" id="A0V-Fh-N4b"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="EjT-RI-IeE"/>
                                             <constraint firstAttribute="trailing" secondItem="x3P-Q0-Fra" secondAttribute="trailing" constant="10" id="Lxw-9R-E8o"/>
+                                            <constraint firstItem="CSb-xN-qjX" firstAttribute="top" secondItem="eca-wr-a19" secondAttribute="bottom" constant="8" id="Xik-lc-8ux"/>
                                             <constraint firstAttribute="height" constant="1000" id="bee-Px-qio"/>
                                             <constraint firstItem="x3P-Q0-Fra" firstAttribute="centerY" secondItem="jGl-Ps-W48" secondAttribute="centerY" id="bxL-XQ-OWT"/>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="iDn-bP-b0s"/>
@@ -191,6 +233,7 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="FloaterView" destination="CSb-xN-qjX" id="HVw-Jx-RWm"/>
                         <outlet property="likesLabel" destination="x3P-Q0-Fra" id="DLf-no-ehx"/>
                         <outlet property="scrollView" destination="EHq-3P-qZG" id="7my-J3-oDK"/>
                         <outlet property="textView" destination="7FS-pu-ENA" id="us0-nR-TgN"/>
@@ -206,4 +249,7 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
             <point key="canvasLocation" x="229.59999999999999" y="102.54872563718142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Heart" width="43" height="40"/>
+    </resources>
 </document>
