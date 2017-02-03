@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYu-Lf-hqb">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYu-Lf-hqb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrl-18-UT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506.39999999999998" y="-24.7376311844078"/>
+            <point key="canvasLocation" x="-663" y="103"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -102,8 +102,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHq-3P-qZG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cox-be-wBq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cox-be-wBq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eca-wr-a19">
                                                 <rect key="frame" x="172" y="18" width="30" height="30"/>
@@ -125,22 +125,30 @@
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7FS-pu-ENA">
-                                                <rect key="frame" x="14" y="56" width="345" height="885"/>
+                                                <rect key="frame" x="14" y="56" width="345" height="1238"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Chocolate bar topping wafer muffin donut lemon drops. Sweet roll candy bonbon. Soufflé bear claw sugar plum cake cupcake. Tootsie roll tart donut croissant cookie macaroon chupa chups tiramisu muffin. Gummies candy sugar plum cupcake candy pudding. Topping apple pie gummi bears toffee caramels marzipan muffin gingerbread. Cotton candy jujubes jujubes macaroon cotton candy. Sweet apple pie caramels candy. Bear claw tootsie roll bear claw marshmallow marzipan candy canes. Danish jelly beans powder brownie soufflé pie toffee tootsie roll. Jujubes sweet roll fruitcake. Gummi bears marzipan brownie soufflé fruitcake cupcake dessert cookie. Bear claw cheesecake brownie wafer candy brownie bear claw.
+                                                <string key="text">Chocolate bar topping wafer muffin donut lemon drops. Sweet roll candy bonbon. Soufflé bear claw sugar plum cake cupcake. Tootsie roll tart donut croissant cookie macaroon chupa chups tiramisu muffin. Gummies candy sugar plum cupcake candy pudding. Topping apple pie gummi bears toffee caramels marzipan muffin gingerbread. Cotton candy jujubes jujubes macaroon cotton candy. Sweet apple pie caramels candy. Bear claw tootsie roll bear claw marshmallow marzipan candy canes. Danish jelly beans powder brownie soufflé pie toffee tootsie roll. Jujubes sweet roll fruitcake. Gummi bears marzipan brownie soufflé fruitcake cupcake dessert cookie. Bear claw cheesecake brownie wafer candy brownie bear claw.
 Jelly-o lemon drops gingerbread. Danish chocolate gummies cake apple pie ice cream pie fruitcake. Tart apple pie gummies fruitcake cheesecake tiramisu marshmallow. Apple pie tootsie roll jelly-o pie. Brownie tart danish donut icing cupcake cookie pastry. Gummies cake apple pie gummies tiramisu. Sesame snaps caramels pastry soufflé gingerbread macaroon. Cake wafer jelly sesame snaps gingerbread cake chocolate bar bonbon candy canes. Bear claw sweet carrot cake chupa chups dessert. Jujubes sugar plum sesame snaps biscuit icing cookie. Caramels gummi bears chocolate toffee danish donut gummies. Lollipop tart toffee. Liquorice pudding ice cream.
 Cupcake chocolate caramels.  Liquorice chupa chups candy. Croissant macaroon marshmallow tootsie roll muffin.
-Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gummi bears bear claw toffee muffin halvah lollipop lemon drops. Cupcake cookie sweet. Apple pie tiramisu pastry soufflé soufflé fruitcake muffin biscuit sweet roll. Cake sugar plum danish. Marzipan cookie bonbon jelly chocolate bar. Icing ice cream croissant. Gummies cookie marzipan sweet roll icing. Brownie tootsie roll apple pie pudding chupa chups pastry. Caramels chupa chups cookie marziphups. Chocolate macaroon tart. Liquorice carrot cake sugar plum cupcake sweet. Bonbon chocolate cake chocolate brownie dragée halvah dragée.Jujubes carrot cake croissant tiramisu cheesecake cheesecake soufflé toffee. Candy canes fruitcake chocolate pudding gummies marzipan jelly-o. Liquorice chocolate candy canes croissant lemon drops gummies cotton candy tootsie roll. Chupa chups croissant pastry tootsie roll. Sugar plum pie sugar plum pie.</mutableString>
+Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gummi bears bear claw toffee muffin halvah lollipop lemon drops. Cupcake cookie sweet. Apple pie tiramisu pastry soufflé soufflé fruitcake muffin biscuit sweet roll. Cake sugar plum danish. Marzipan cookie bonbon jelly chocolate bar. Icing ice cream croissant. Gummies cookie marzipan sweet roll icing. Brownie tootsie roll apple pie pudding chupa chups pastry. Caramels chupa chups cookie marziphups. Chocolate macaroon tart. Liquorice carrot cake sugar plum cupcake sweet. Bonbon chocolate cake chocolate brownie dragée halvah dragée.Jujubes carrot cake croissant tiramisu cheesecake cheesecake soufflé toffee. Candy canes fruitcake chocolate pudding gummies marzipan jelly-o. Liquorice chocolate candy canes croissant lemon drops gummies cotton candy tootsie roll. Chupa chups croissant pastry tootsie roll. Sugar plum pie sugar plum pie.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3P-Q0-Fra">
+                                                <rect key="frame" x="354.5" y="22.5" width="10.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="12K-GZ-tHV"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="EjT-RI-IeE"/>
+                                            <constraint firstAttribute="trailing" secondItem="x3P-Q0-Fra" secondAttribute="trailing" constant="10" id="Lxw-9R-E8o"/>
                                             <constraint firstAttribute="height" constant="1000" id="bee-Px-qio"/>
+                                            <constraint firstItem="x3P-Q0-Fra" firstAttribute="centerY" secondItem="jGl-Ps-W48" secondAttribute="centerY" id="bxL-XQ-OWT"/>
                                             <constraint firstItem="eca-wr-a19" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="iDn-bP-b0s"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="leading" secondItem="cox-be-wBq" secondAttribute="leading" constant="14" id="qH2-jg-QQj"/>
                                         </constraints>
@@ -168,6 +176,7 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="EHq-3P-qZG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5bO-NL-zz0"/>
                             <constraint firstItem="cox-be-wBq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="6Ab-u2-x0M"/>
@@ -175,15 +184,24 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EHq-3P-qZG" secondAttribute="bottom" id="Jzx-bD-d6R"/>
                             <constraint firstAttribute="trailing" secondItem="EHq-3P-qZG" secondAttribute="trailing" id="d4c-yP-ZzW"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WoW-Wt-70I" appends="YES" id="BGy-Hk-eFM"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="likesLabel" destination="x3P-Q0-Fra" id="DLf-no-ehx"/>
                         <outlet property="scrollView" destination="EHq-3P-qZG" id="7my-J3-oDK"/>
                         <outlet property="textView" destination="7FS-pu-ENA" id="us0-nR-TgN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="WoW-Wt-70I">
+                    <connections>
+                        <action selector="didDoubleTapScrollView:" destination="BYZ-38-t0r" id="gGR-oa-k06"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="229.59999999999999" y="102.54872563718142"/>
         </scene>

@@ -15,9 +15,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     @IBOutlet weak var textView: UITextView!
     var ref: FIRDatabaseReference!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet var likesLabel: UILabel!
+    var nLikes: Int = 0
     private var _selectedState: Bool!
-    
+
     var selectedState: Bool
     {
         get{
@@ -73,13 +74,14 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func setContentOffSet(){
         //TODO: Float number for y here should be equal to the number we recive from firebase.
         let offSet = CGPoint(x: 0, y:7.0)
-        
-        Animations.start(0.3, animations: {
-            self.scrollView.setContentOffset(offSet, animated: true)
-        })
+        self.scrollView.setContentOffset(offSet, animated: true)
     }
     
     
+    @IBAction func didDoubleTapScrollView(_ sender: Any) {
+        self.nLikes += 1
+        self.likesLabel.text = "\(self.nLikes)"
+    }
     
     
    
@@ -90,8 +92,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
             print("\(data.value)")
             
             let offSet = CGPoint(x: 0, y:data.value as! Int)
-            
-            self.scrollView.setContentOffset(offSet, animated: true)
+            Animations.start(1, animations: {
+                self.scrollView.setContentOffset(offSet, animated: true)
+            })
+
             
         }, withCancel: {err in
             print(err)
