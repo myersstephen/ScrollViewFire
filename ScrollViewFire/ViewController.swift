@@ -81,6 +81,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     @IBAction func didDoubleTapScrollView(_ sender: Any) {
         self.nLikes += 1
         self.likesLabel.text = "\(self.nLikes)"
+        self.ref.child("likes").setValue(self.nLikes)
     }
     
     
