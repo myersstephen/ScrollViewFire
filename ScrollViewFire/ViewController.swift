@@ -36,7 +36,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         scrollView.delegate = self
         textView.delegate = self
         ref = FIRDatabase.database().reference()
-        
+
         checkBroadcastState()
         
         textView.isUserInteractionEnabled = false
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         
         // set position if selected state is true
         if selectedState == true {
-            self.ref.setValue(["position_IS":y])
+            self.ref.child("pos").setValue(["position_IS":y])
         }
         
     }
@@ -87,7 +87,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
    
     func updateScreenPosition(){
         
-        ref.observe(.childChanged, with: {data in
+        self.ref.child("pos").observe(.childChanged, with: {data in
             //self.pos = data.value as! FIRDataSnapshot
             print("\(data.value)")
             
@@ -107,7 +107,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func checkBroadcastState() {
         if selectedState == true {
             
-           ref.removeAllObservers()
+           self.ref.child("pos").removeAllObservers()
             
         } else if selectedState == false {
             updateScreenPosition()
