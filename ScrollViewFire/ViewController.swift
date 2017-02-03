@@ -81,11 +81,21 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     
     
     @IBAction func didDoubleTapScrollView(_ sender: Any) {
-        self.nLikes += 1
-        self.likesLabel.text = "\(self.nLikes)"
-        self.ref.child("likes").setValue(self.nLikes)
-        FloaterView.startAnimation()
-        //FloaterView.stopAnimation()
+        if selectedState == true {
+            setLikesLabel()
+        } else if selectedState == false {
+            self.nLikes += 1
+            self.ref.child("likes").setValue(self.nLikes)
+            FloaterView.startAnimation()
+
+        }
+        
+        
+//            self.nLikes += 1
+//            self.likesLabel.text = "\(self.nLikes)"
+//            self.ref.child("likes").setValue(self.nLikes)
+//            FloaterView.startAnimation()
+        
     }
     
     
@@ -109,13 +119,22 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         
     }
     
+    func setLikesLabel(){
+        self.ref.child("likes").observe(.value, with: {data in
+            self.likesLabel.text = "\(data.value as! Int)"
+        })
+    }
+    
     func checkBroadcastState() {
         if selectedState == true {
             
            self.ref.child("pos").removeAllObservers()
+            setLikesLabel()
+          
             
         } else if selectedState == false {
             updateScreenPosition()
+            likesLabel.isHidden = true
         }
     }
 
