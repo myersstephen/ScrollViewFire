@@ -105,14 +105,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cox-be-wBq">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eca-wr-a19">
-                                                <rect key="frame" x="172" y="18" width="30" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="W3O-U5-0Ii"/>
-                                                    <constraint firstAttribute="height" constant="30" id="h7k-pz-yz1"/>
-                                                </constraints>
-                                                <state key="normal" title="TOP"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGl-Ps-W48">
                                                 <rect key="frame" x="14" y="18" width="34" height="30"/>
                                                 <constraints>
@@ -141,7 +133,7 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-xN-qjX" customClass="Floater" customModule="ScrollViewFire" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-xN-qjX" customClass="Floater" customModule="ScrollViewFire" customModuleProvider="target">
                                                 <rect key="frame" x="55" y="56" width="240" height="302"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -184,14 +176,11 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="eca-wr-a19" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" id="12K-GZ-tHV"/>
                                             <constraint firstItem="CSb-xN-qjX" firstAttribute="centerX" secondItem="cox-be-wBq" secondAttribute="centerX" constant="-12.5" id="A0V-Fh-N4b"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="EjT-RI-IeE"/>
                                             <constraint firstAttribute="trailing" secondItem="x3P-Q0-Fra" secondAttribute="trailing" constant="10" id="Lxw-9R-E8o"/>
-                                            <constraint firstItem="CSb-xN-qjX" firstAttribute="top" secondItem="eca-wr-a19" secondAttribute="bottom" constant="8" id="Xik-lc-8ux"/>
                                             <constraint firstAttribute="height" constant="1000" id="bee-Px-qio"/>
                                             <constraint firstItem="x3P-Q0-Fra" firstAttribute="centerY" secondItem="jGl-Ps-W48" secondAttribute="centerY" id="bxL-XQ-OWT"/>
-                                            <constraint firstItem="eca-wr-a19" firstAttribute="top" secondItem="cox-be-wBq" secondAttribute="top" constant="18" id="iDn-bP-b0s"/>
                                             <constraint firstItem="jGl-Ps-W48" firstAttribute="leading" secondItem="cox-be-wBq" secondAttribute="leading" constant="14" id="qH2-jg-QQj"/>
                                         </constraints>
                                     </view>
@@ -246,7 +235,7 @@ Candy canes lollipop jelly chupa chups chocolate bar cheesecake sweet roll. Gumm
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="229.59999999999999" y="102.54872563718142"/>
+            <point key="canvasLocation" x="196" y="6"/>
         </scene>
     </scenes>
     <resources>

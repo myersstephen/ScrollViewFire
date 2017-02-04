@@ -55,10 +55,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         // set position if selected state is true
         if selectedState == true {
             self.ref.child("pos").setValue(["position_IS":y])
+          
         }
         
     }
 
+    
     
     
     @IBAction func BottomTapped(_ sender: Any) {
@@ -83,6 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     @IBAction func didDoubleTapScrollView(_ sender: Any) {
         if selectedState == true {
             setLikesLabel()
+
         } else if selectedState == false {
             self.nLikes += 1
             self.ref.child("likes").setValue(self.nLikes)
@@ -109,6 +112,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
             let offSet = CGPoint(x: 0, y:data.value as! Int)
             Animations.start(1, animations: {
                 self.scrollView.setContentOffset(offSet, animated: true)
+               
             })
 
             
@@ -122,15 +126,16 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func setLikesLabel(){
         self.ref.child("likes").observe(.value, with: {data in
             self.likesLabel.text = "\(data.value as! Int)"
+            self.FloaterView.startAnimation()
         })
     }
+    
     
     func checkBroadcastState() {
         if selectedState == true {
             
            self.ref.child("pos").removeAllObservers()
             setLikesLabel()
-          
             
         } else if selectedState == false {
             updateScreenPosition()
