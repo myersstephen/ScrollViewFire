@@ -130,7 +130,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func LottieAnimation_1(){
         let animationView = LAAnimationView.animationNamed("TwitterHeart")
         animationView?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        animationView?.contentMode = .scaleAspectFit
+        animationView?.contentMode = .scaleAspectFill
         
         
         self.view.addSubview(animationView!)

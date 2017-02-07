@@ -14,6 +14,10 @@
 		690BC1521E12D840003B2FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */; };
 		69244FA11E296C5C00D8ECE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */; };
 		6951777B1E4A30F800D73775 /* TwitterHeart.json in Resources */ = {isa = PBXBuildFile; fileRef = 6951777A1E4A30F800D73775 /* TwitterHeart.json */; };
+		6951777D1E4A4B6200D73775 /* Haha.json in Resources */ = {isa = PBXBuildFile; fileRef = 6951777C1E4A4B6200D73775 /* Haha.json */; };
+		6951777F1E4A58C000D73775 /* Bodymovin.json in Resources */ = {isa = PBXBuildFile; fileRef = 6951777E1E4A58C000D73775 /* Bodymovin.json */; };
+		695177811E4A617F00D73775 /* LottieSimple.json in Resources */ = {isa = PBXBuildFile; fileRef = 695177801E4A617F00D73775 /* LottieSimple.json */; };
+		695177831E4A62F700D73775 /* hand.json in Resources */ = {isa = PBXBuildFile; fileRef = 695177821E4A62F700D73775 /* hand.json */; };
 		69D063491E3E9C3000841830 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D063481E3E9C2F00841830 /* LoginVC.swift */; };
 		69D0634F1E44F13400841830 /* Floaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D0634E1E44F13400841830 /* Floaters.swift */; };
 		C31963AC1E43FCDE00FD991B /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31963AB1E43FCDE00FD991B /* Animations.swift */; };
@@ -30,6 +34,10 @@
 		690BC1531E12D840003B2FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6951777A1E4A30F800D73775 /* TwitterHeart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeart.json; sourceTree = "<group>"; };
+		6951777C1E4A4B6200D73775 /* Haha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Haha.json; sourceTree = "<group>"; };
+		6951777E1E4A58C000D73775 /* Bodymovin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bodymovin.json; sourceTree = "<group>"; };
+		695177801E4A617F00D73775 /* LottieSimple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSimple.json; sourceTree = "<group>"; };
+		695177821E4A62F700D73775 /* hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hand.json; sourceTree = "<group>"; };
 		69D063481E3E9C2F00841830 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		69D0634E1E44F13400841830 /* Floaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floaters.swift; sourceTree = "<group>"; };
 		8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +70,11 @@
 		690BC13B1E12D83F003B2FE1 = {
 			isa = PBXGroup;
 			children = (
+				695177801E4A617F00D73775 /* LottieSimple.json */,
 				6951777A1E4A30F800D73775 /* TwitterHeart.json */,
+				6951777C1E4A4B6200D73775 /* Haha.json */,
+				6951777E1E4A58C000D73775 /* Bodymovin.json */,
+				695177821E4A62F700D73775 /* hand.json */,
 				690BC1461E12D840003B2FE1 /* ScrollViewFire */,
 				690BC1451E12D840003B2FE1 /* Products */,
 				399F288AF65F245199F9A810 /* Pods */,
@@ -168,10 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				690BC1521E12D840003B2FE1 /* LaunchScreen.storyboard in Resources */,
+				6951777F1E4A58C000D73775 /* Bodymovin.json in Resources */,
 				69244FA11E296C5C00D8ECE2 /* GoogleService-Info.plist in Resources */,
 				6951777B1E4A30F800D73775 /* TwitterHeart.json in Resources */,
+				695177811E4A617F00D73775 /* LottieSimple.json in Resources */,
+				6951777D1E4A4B6200D73775 /* Haha.json in Resources */,
 				690BC14F1E12D840003B2FE1 /* Assets.xcassets in Resources */,
 				690BC14D1E12D840003B2FE1 /* Main.storyboard in Resources */,
+				695177831E4A62F700D73775 /* hand.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
