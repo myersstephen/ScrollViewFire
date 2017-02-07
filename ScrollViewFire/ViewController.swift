@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Lottie
 
 
 class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate {
@@ -19,6 +20,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var likesLabel: UILabel!
     var nLikes: Int = 0
+    var someAnimation: Bool = false
+    
     fileprivate var _selectedState: Bool!
 
     var selectedState: Bool
@@ -89,7 +92,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         } else if selectedState == false {
             self.nLikes += 1
             self.ref.child("likes").setValue(self.nLikes)
-            FloaterView.startAnimation()
+           // FloaterView.startAnimation()
+            LottieAnimation_1()
 
         }
         
@@ -123,10 +127,27 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         
     }
     
+    func LottieAnimation_1(){
+        let animationView = LAAnimationView.animationNamed("TwitterHeart")
+        animationView?.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+        animationView?.contentMode = .scaleAspectFit
+        
+        
+        self.view.addSubview(animationView!)
+        
+        animationView?.play(completion: { (success: Bool) in
+            animationView?.removeFromSuperview()
+        
+        })
+        
+    }
+    
+    
     func setLikesLabel(){
         self.ref.child("likes").observe(.value, with: {data in
             self.likesLabel.text = "\(data.value as! Int)"
-            self.FloaterView.startAnimation()
+            //self.FloaterView.startAnimation()
+            self.LottieAnimation_1()
         })
     }
     

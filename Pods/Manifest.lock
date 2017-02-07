@@ -23,10 +23,12 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - lottie-ios (1.0.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
+  - lottie-ios
 
 SPEC CHECKSUMS:
   Firebase: b8134e285eb33201115bc688bc5d7f112923bc1f
@@ -37,7 +39,8 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  lottie-ios: c40d67c1481d6fb9fa24fe46731ac823f5f6675b
 
-PODFILE CHECKSUM: c6c80b99924bc2796ae4b450516a20071ace08fa
+PODFILE CHECKSUM: c16d49634eecc69fe5c2ae7c3d29c0f6e515f456
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

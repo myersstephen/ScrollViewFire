@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2B930AE925D3B37A1ACA2BA6B0659968'
+               BlueprintIdentifier = 'C1321F59BBB70E8F8C3D0DC5AB81C3C9'
                BlueprintName = 'Pods-ScrollViewFire'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-ScrollViewFire.framework'>

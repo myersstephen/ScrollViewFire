@@ -9,5 +9,6 @@ target 'ScrollViewFire' do
 
     pod 'Firebase/Core'
     pod 'Firebase/Database'
+    pod 'lottie-ios'
 
 end
