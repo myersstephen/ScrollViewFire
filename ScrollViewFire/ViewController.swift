@@ -105,7 +105,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     func updateScreenPosition(){
         
         self.ref.child("pos").observe(.childChanged, with: {data in
-            //self.pos = data.value as! FIRDataSnapshot
             print("\(data.value)")
             
             let offSet = CGPoint(x: 0, y:data.value as! Int)

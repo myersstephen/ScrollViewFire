@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		690BC1441E12D840003B2FE1 /* ScrollViewFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690BC1471E12D840003B2FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		690BC1491E12D840003B2FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		690BC1491E12D840003B2FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ScrollViewFire/ViewController.swift; sourceTree = "<group>"; };
 		690BC14C1E12D840003B2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		690BC14E1E12D840003B2FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		690BC1511E12D840003B2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		6951777E1E4A58C000D73775 /* Bodymovin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bodymovin.json; sourceTree = "<group>"; };
 		695177801E4A617F00D73775 /* LottieSimple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieSimple.json; sourceTree = "<group>"; };
 		695177821E4A62F700D73775 /* hand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hand.json; sourceTree = "<group>"; };
-		69D063481E3E9C2F00841830 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		69D063481E3E9C2F00841830 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ScrollViewFire/LoginVC.swift; sourceTree = "<group>"; };
 		69D0634E1E44F13400841830 /* Floaters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floaters.swift; sourceTree = "<group>"; };
 		8B27B7F4739515A7B41EEAC3 /* Pods-ScrollViewFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.debug.xcconfig"; sourceTree = "<group>"; };
 		97DF53A3BD280348E4C28F71 /* Pods-ScrollViewFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewFire.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewFire/Pods-ScrollViewFire.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,12 +70,10 @@
 		690BC13B1E12D83F003B2FE1 = {
 			isa = PBXGroup;
 			children = (
-				695177801E4A617F00D73775 /* LottieSimple.json */,
-				6951777A1E4A30F800D73775 /* TwitterHeart.json */,
-				6951777C1E4A4B6200D73775 /* Haha.json */,
-				6951777E1E4A58C000D73775 /* Bodymovin.json */,
-				695177821E4A62F700D73775 /* hand.json */,
 				690BC1461E12D840003B2FE1 /* ScrollViewFire */,
+				6924F1E81E4C1FB500C6233F /* Controllers */,
+				6924F1E71E4C1F8600C6233F /* Storyboards */,
+				6924F1E61E4C1F5800C6233F /* Animations */,
 				690BC1451E12D840003B2FE1 /* Products */,
 				399F288AF65F245199F9A810 /* Pods */,
 				DB0DB940DF3CAB3D491F423E /* Frameworks */,
@@ -94,17 +92,43 @@
 			isa = PBXGroup;
 			children = (
 				690BC1471E12D840003B2FE1 /* AppDelegate.swift */,
-				690BC1491E12D840003B2FE1 /* ViewController.swift */,
-				690BC14B1E12D840003B2FE1 /* Main.storyboard */,
 				C31963AB1E43FCDE00FD991B /* Animations.swift */,
 				690BC14E1E12D840003B2FE1 /* Assets.xcassets */,
-				690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */,
 				690BC1531E12D840003B2FE1 /* Info.plist */,
 				69244FA01E296C5C00D8ECE2 /* GoogleService-Info.plist */,
-				69D063481E3E9C2F00841830 /* LoginVC.swift */,
 				69D0634E1E44F13400841830 /* Floaters.swift */,
 			);
 			path = ScrollViewFire;
+			sourceTree = "<group>";
+		};
+		6924F1E61E4C1F5800C6233F /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				695177801E4A617F00D73775 /* LottieSimple.json */,
+				695177821E4A62F700D73775 /* hand.json */,
+				6951777E1E4A58C000D73775 /* Bodymovin.json */,
+				6951777C1E4A4B6200D73775 /* Haha.json */,
+				6951777A1E4A30F800D73775 /* TwitterHeart.json */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		6924F1E71E4C1F8600C6233F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				690BC14B1E12D840003B2FE1 /* Main.storyboard */,
+				690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		6924F1E81E4C1FB500C6233F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				690BC1491E12D840003B2FE1 /* ViewController.swift */,
+				69D063481E3E9C2F00841830 /* LoginVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		DB0DB940DF3CAB3D491F423E /* Frameworks */ = {
@@ -263,6 +287,7 @@
 				690BC14C1E12D840003B2FE1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ScrollViewFire;
 			sourceTree = "<group>";
 		};
 		690BC1501E12D840003B2FE1 /* LaunchScreen.storyboard */ = {
@@ -271,6 +296,7 @@
 				690BC1511E12D840003B2FE1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ScrollViewFire;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
