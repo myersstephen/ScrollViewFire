@@ -98,11 +98,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         }
         
         
-//            self.nLikes += 1
-//            self.likesLabel.text = "\(self.nLikes)"
-//            self.ref.child("likes").setValue(self.nLikes)
-//            FloaterView.startAnimation()
-        
     }
     
     
