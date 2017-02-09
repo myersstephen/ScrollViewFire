@@ -20,7 +20,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var likesLabel: UILabel!
     var nLikes: Int = 0
-    var someAnimation: Bool = false
     
     fileprivate var _selectedState: Bool!
 
@@ -67,7 +66,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     
     
     @IBAction func BottomTapped(_ sender: Any) {
-        //test to see if when bottom button is pressed it should scroll to top
         setContentOffSet()
     }
     
@@ -79,7 +77,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     
     
     func setContentOffSet(){
-        //TODO: Float number for y here should be equal to the number we recive from firebase.
         let offSet = CGPoint(x: 0, y:7.0)
         self.scrollView.setContentOffset(offSet, animated: true)
     }
@@ -92,7 +89,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
         } else if selectedState == false {
             self.nLikes += 1
             self.ref.child("likes").setValue(self.nLikes)
-           // FloaterView.startAnimation()
             LottieAnimation_1()
 
         }
