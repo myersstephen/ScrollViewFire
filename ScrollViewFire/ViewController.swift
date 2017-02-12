@@ -97,7 +97,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextViewDelegate
     }
     
     
-   
+   //update screen positioning
     func updateScreenPosition(){
         
         self.ref.child("pos").observe(.childChanged, with: {data in
