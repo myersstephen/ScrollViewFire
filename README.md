@@ -1,3 +1,3 @@
 # ScrollViewFire
 
-Be a g, scroll like me
+Remote Scrolling Using Firebase on iOS
